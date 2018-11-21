@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>glcode.js</file>
+        <file>three.js</file>
+        <file>KobliMenu.qml</file>
+        <file>kobliMenuJS.js</file>
+        <file>YatayRect.qml</file>
+        <file>KobliButon.qml</file>
+        <file>imgs/threed.png</file>
+        <file>imgs/twod.png</file>
+    </qresource>
+</RCC>
