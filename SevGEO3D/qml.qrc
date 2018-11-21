@@ -9,5 +9,20 @@
         <file>KobliButon.qml</file>
         <file>imgs/threed.png</file>
         <file>imgs/twod.png</file>
+        <file>imgs/buyut.png</file>
+        <file>imgs/sigdir.png</file>
+        <file>imgs/yorunge.png</file>
+        <file>VerticalLine.qml</file>
+        <file>HorizantalLine.qml</file>
+        <file>imgs/arti.png</file>
+        <file>imgs/ayar.png</file>
+        <file>imgs/dosyadanAc.png</file>
+        <file>imgs/eksi.png</file>
+        <file>imgs/geriAl.png</file>
+        <file>imgs/ileriAl.png</file>
+        <file>imgs/kaydet.png</file>
+        <file>imgs/sablon.png</file>
+        <file>imgs/ucgenAc.png</file>
+        <file>imgs/yeni.png</file>
     </qresource>
 </RCC>

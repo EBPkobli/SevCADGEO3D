@@ -10,14 +10,14 @@ function initializeGL(canvas) {
 
     var material = new THREE.MeshBasicMaterial({ color: 0xff0000,
                                                    shading: THREE.SmoothShading });
-    var cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+    var cubeGeometry = new THREE.BoxGeometry(2, 2, 2);
     cube = new THREE.Mesh(cubeGeometry, material);
     cube.rotation.set(0.0, 0.0, 0.0);
     scene.add(cube);
 
     // wireframe
     var geo = new THREE.EdgesGeometry( cube.geometry );
-    var mat = new THREE.LineBasicMaterial( { color: 0x0000ff, linewidth: 2 } );
+    var mat = new THREE.LineBasicMaterial( { color: 0x000000, linewidth: 3 } );
     var wireframe = new THREE.LineSegments( geo, mat );
     wireframe.renderOrder = 1; // make sure wireframes are rendered 2nd
     cube.add( wireframe );
@@ -35,8 +35,14 @@ function resizeGL(canvas) {
     renderer.setPixelRatio(canvas.devicePixelRatio);
     renderer.setSize(canvas.width, canvas.height);
 }
-
+var animSayac = 0;
 function paintGL(canvas) {
+    if(animCamActive)
+    {
+        cube.rotation.set(animSayac,animSayac,0);
+        animSayac += 0.01;
+    }
+
     renderer.render(scene, camera);
 }
 function convertTo(D)
@@ -51,4 +57,9 @@ function convertTo(D)
         break;
 
     }
+}
+var animCamActive = false;
+function animCam(value)
+{
+    animCamActive = value;
 }
