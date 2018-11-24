@@ -298,6 +298,72 @@ Window {
         height: anaEkran.height / (720/611)
         color: "#f0f0f0"
 
+        KobliKategori{
+            id : m_Kategori
+            clip : true
+            yukseklik: projeBtn.height + atamaBtn.height + rigidBtn.height + zeminlerBtn.height + ayarlarBtn.height + araYuzeyBtn.height  + vl3.height + 15
+            KoblimgButon{
+                id : projeBtn
+                anchors.top: m_Kategori.bolmeKat.bottom
+                anchors.topMargin: 4
+                btnTag: "Proje"
+                imgYol: "imgs/project.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : ayarlarBtn
+                anchors.top: projeBtn.bottom
+                anchors.topMargin: 2
+                btnTag: "Ayarlar"
+                imgYol: "imgs/setting.png"
+                height: 23
+            }
+
+            VerticalLine{
+                id : vl3
+                anchors.top: ayarlarBtn.bottom
+                anchors.topMargin: 4
+                aralik: 4
+            }
+
+            KoblimgButon{
+                id : araYuzeyBtn
+                anchors.top: vl3.bottom
+                anchors.topMargin: 4
+                btnTag: "Ara yüzey"
+                imgYol: "imgs/arayuzey.png"
+                height: 23
+            }
+
+            KoblimgButon{
+                id : zeminlerBtn
+                anchors.top: araYuzeyBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Zeminler"
+                imgYol: "imgs/soil.png"
+                height: 23
+            }
+
+            KoblimgButon{
+                id : rigidBtn
+                anchors.top: zeminlerBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Rijit Cisimler"
+                imgYol: "imgs/rigid.png"
+                height: 23
+            }
+
+            KoblimgButon{
+                id : atamaBtn
+                anchors.top: rigidBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Atama"
+                imgYol: "imgs/zemin.png"
+                height: 23
+            }
+
+        }
+
     }
     Rectangle{
         id : altFrame

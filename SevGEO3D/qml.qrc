@@ -24,5 +24,16 @@
         <file>imgs/sablon.png</file>
         <file>imgs/ucgenAc.png</file>
         <file>imgs/yeni.png</file>
+        <file>KobliKategori.qml</file>
+        <file>kategoriJS.js</file>
+        <file>imgs/plus.png</file>
+        <file>imgs/minus.png</file>
+        <file>KoblimgButon.qml</file>
+        <file>imgs/project.png</file>
+        <file>imgs/setting.png</file>
+        <file>imgs/soil.png</file>
+        <file>imgs/rigid.png</file>
+        <file>imgs/zemin.png</file>
+        <file>imgs/arayuzey.png</file>
     </qresource>
 </RCC>
