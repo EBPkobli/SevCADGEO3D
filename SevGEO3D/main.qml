@@ -32,6 +32,7 @@ Window {
                 id : dosyaMenu
                 yazi : qsTr("<u>D</u>osya")
                 renk : "#f5f6f7"
+                glCodeChangeObj : GLCode.changeActiveOBJ;
             }
             KobliMenu{
                 id : duzenleMenu
@@ -300,8 +301,9 @@ Window {
 
         KobliKategori{
             id : m_Kategori
+            kategoriAd : "Modlar"
             clip : true
-            yukseklik: projeBtn.height + atamaBtn.height + rigidBtn.height + zeminlerBtn.height + ayarlarBtn.height + araYuzeyBtn.height  + vl3.height + 15
+            yukseklik: projeBtn.height * 15 + vl3.height * 3 + 6*4 + 12*1 /*marginler*/ + 1
             KoblimgButon{
                 id : projeBtn
                 anchors.top: m_Kategori.bolmeKat.bottom
@@ -313,7 +315,7 @@ Window {
             KoblimgButon{
                 id : ayarlarBtn
                 anchors.top: projeBtn.bottom
-                anchors.topMargin: 2
+                anchors.topMargin: 1
                 btnTag: "Ayarlar"
                 imgYol: "imgs/setting.png"
                 height: 23
@@ -359,6 +361,92 @@ Window {
                 anchors.topMargin: 1
                 btnTag: "Atama"
                 imgYol: "imgs/zemin.png"
+                height: 23
+            }
+
+            VerticalLine{
+                id : vl4
+                anchors.top: atamaBtn.bottom
+                anchors.topMargin: 4
+                aralik: 4
+            }
+
+            KoblimgButon{
+                id : ankrajBtn
+                anchors.top: vl4.bottom
+                anchors.topMargin: 4
+                btnTag: "Ankrajlar"
+                imgYol: "imgs/ankraj.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : civiBtn
+                anchors.top: ankrajBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Çiviler"
+                imgYol: "imgs/civi.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : donatiBtn
+                anchors.top: civiBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Donatılar"
+                imgYol: "imgs/donati.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : pasifKazikBtn
+                anchors.top: donatiBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Pasif Kazıklar"
+                imgYol: "imgs/kazik.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : sürsarjBtn
+                anchors.top: pasifKazikBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Sürşarj"
+                imgYol: "imgs/sursarj.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : suBtn
+                anchors.top: sürsarjBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Su"
+                imgYol: "imgs/su.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : depremBtn
+                anchors.top: suBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Deprem"
+                imgYol: "imgs/deprem.png"
+                height: 23
+            }
+            KoblimgButon{
+                id : asamaAyarBtn
+                anchors.top: depremBtn.bottom
+                anchors.topMargin: 1
+                btnTag: "Aşama Ayarları"
+                imgYol: "imgs/asama.png"
+                height: 23
+            }
+            VerticalLine{
+                id : vl5
+                anchors.top: asamaAyarBtn.bottom
+                anchors.topMargin: 4
+                aralik: 4
+            }
+            KoblimgButon{
+                id : analizBtn
+                anchors.top: vl5.bottom
+                anchors.topMargin: 4
+                btnTag: "Analiz"
+                imgYol: "imgs/analiz.png"
                 height: 23
             }
 

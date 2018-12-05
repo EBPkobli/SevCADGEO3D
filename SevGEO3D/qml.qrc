@@ -35,5 +35,21 @@
         <file>imgs/rigid.png</file>
         <file>imgs/zemin.png</file>
         <file>imgs/arayuzey.png</file>
+        <file>imgs/newFile.png</file>
+        <file>imgs/openFile.png</file>
+        <file>imgs/printFile.png</file>
+        <file>imgs/printPhoto.png</file>
+        <file>imgs/saveFile.png</file>
+        <file>KobliMenuBtn.qml</file>
+        <file>imgs/sagMenu.png</file>
+        <file>imgs/analiz.png</file>
+        <file>imgs/ankraj.png</file>
+        <file>imgs/asama.png</file>
+        <file>imgs/civi.png</file>
+        <file>imgs/deprem.png</file>
+        <file>imgs/kazik.png</file>
+        <file>imgs/su.png</file>
+        <file>imgs/sursarj.png</file>
+        <file>imgs/donati.png</file>
     </qresource>
 </RCC>
